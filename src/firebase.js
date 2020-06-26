@@ -3,7 +3,7 @@ import "firebase/auth"
 import "firebase/database"
 import "firebase/storage"
 
-var firebaseConfig = firebase.initializeApp({
+firebase.initializeApp({
   apiKey: "AIzaSyCczVDp5lTxObH_H8DcNP-lSfBtNtQxxlM",
   authDomain: "react-slack-clone-550b3.firebaseapp.com",
   databaseURL: "https://react-slack-clone-550b3.firebaseio.com",
