@@ -9,7 +9,7 @@ import MetaPanel from "./MetaPanel/MetaPanel"
 
 import "./App.css"
 
-const App = ({ currentUser, currentChannel }) => {
+const App = ({ currentUser, currentChannel, isPrivateChannel }) => {
   return (
     <Grid columns="equal" className="app" style={{ background: "#eee" }}>
       <ColorPanel />
@@ -23,6 +23,7 @@ const App = ({ currentUser, currentChannel }) => {
           key={currentChannel && currentChannel.id}
           currentChannel={currentChannel}
           currentUser={currentUser}
+          isPrivateChannel={isPrivateChannel}
         />
       </Grid.Column>
 
@@ -35,5 +36,6 @@ const App = ({ currentUser, currentChannel }) => {
 const mapStateToProps = (state) => ({
   currentUser: state.user.currentUser,
   currentChannel: state.channel.currentChannel,
+  isPrivateChannel: state.channel.isPrivateChannel,
 })
 export default connect(mapStateToProps)(App)

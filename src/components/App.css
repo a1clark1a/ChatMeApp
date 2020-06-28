@@ -6,6 +6,12 @@ body,
   padding: 1em;
 }
 
+/* Side Panel */
+.menu {
+  padding-bottom: 2em;
+}
+
+/* Messages */
 .messages {
   height: 440px;
   overflow-y: scroll;
@@ -28,6 +34,8 @@ body,
 .message__image {
   padding: 1em;
 }
+
+/* Progress bar */
 
 .progress__bar {
   margin: 0.3em 0 0 0 !important;
