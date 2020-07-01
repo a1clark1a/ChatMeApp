@@ -98,15 +98,13 @@ class DirectMessages extends Component {
             <Icon name="mail" />
             DIRECT MESSAGES
           </span>{" "}
-          {users.length}
+          ({users.length})
         </Menu.Item>
         {users.map((user) => (
           <Menu.Item
             key={user.uid}
             active={user.uid === activeChannel}
-            onClick={() => {
-              this.changeChannel(user)
-            }}
+            onClick={() => this.changeChannel(user)}
             style={{ opacity: 0.7, fontStyle: "italic" }}
           >
             <Icon
