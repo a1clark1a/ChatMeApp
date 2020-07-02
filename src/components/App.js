@@ -12,7 +12,7 @@ import "./App.css"
 // prettier-ignore
 const App = ({ currentUser, currentChannel, 
   isPrivateChannel, userPosts, primaryColor, secondaryColor }) => {
-    console.log(secondaryColor)
+    
   return (
     <Grid columns="equal" className="app" style={{ background: secondaryColor }}>
       <ColorPanel currentUser={currentUser} />

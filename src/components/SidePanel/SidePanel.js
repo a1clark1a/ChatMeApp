@@ -9,7 +9,7 @@ import Starred from "./Starred"
 class SidePanel extends Component {
   render() {
     const { currentUser, primaryColor } = this.props
-    console.log("side", primaryColor)
+
     return (
       <Menu
         size="large"
