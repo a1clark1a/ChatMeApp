@@ -12,6 +12,8 @@ class SidePanel extends Component {
 
     return (
       <Menu
+        responsive
+        as={Menu}
         size="large"
         inverted
         fixed="left"

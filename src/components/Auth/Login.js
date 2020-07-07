@@ -8,6 +8,7 @@ import {
   Message,
   Icon,
 } from "semantic-ui-react"
+import "./Login-Register.css"
 
 import { Link } from "react-router-dom"
 import firebase from "../../firebase"
@@ -61,10 +62,16 @@ class Login extends Component {
 
     return (
       <Grid textAlign="center" verticalAlign="middle" className="app">
-        <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h1" icon color="violet" textAlign="center">
-            <Icon name="puzzle piece" color="violet" />
-            Login to Devchat
+        <Grid.Column className="app__column">
+          <Header
+            as="h1"
+            icon
+            color="blue"
+            textAlign="center"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <Icon name="keyboard" color="blue" />
+            Login to ChatMeApp
           </Header>
           <Form onSubmit={this.handleSubmit} size="large">
             <Segment stacked>
@@ -94,7 +101,7 @@ class Login extends Component {
 
               <Button
                 className={loading ? "loading" : ""}
-                color="violet"
+                color="blue"
                 fluid
                 size="large"
               >

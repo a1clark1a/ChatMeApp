@@ -15,12 +15,13 @@ const App = ({ currentUser, currentChannel,
     
   return (
     <Grid columns="equal" className="app" style={{ background: secondaryColor }}>
-      <ColorPanel currentUser={currentUser} />
+      {/* <ColorPanel currentUser={currentUser} /> */}
+      
       <SidePanel
         key={currentUser && currentUser.id}
         currentUser={currentUser}
         primaryColor={primaryColor}
-      />
+      /> *
 
       <Grid.Column style={{ marginLeft: 320 }}>
         <Messages

@@ -145,10 +145,16 @@ class Register extends Component {
 
     return (
       <Grid textAlign="center" verticalAlign="middle" className="app">
-        <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h1" icon color="orange" textAlign="center">
-            <Icon name="puzzle piece" color="orange" />
-            Register for Devchat
+        <Grid.Column className="app__column">
+          <Header
+            as="h1"
+            icon
+            color="green"
+            textAlign="center"
+            style={{ fontFamily: "Raleway" }}
+          >
+            <Icon name="keyboard" color="green" />
+            Register for ChatMeApp
           </Header>
           <Form onSubmit={this.handleSubmit} size="large">
             <Segment stacked>
@@ -202,7 +208,7 @@ class Register extends Component {
 
               <Button
                 className={loading ? "loading" : ""}
-                color="orange"
+                color="green"
                 fluid
                 size="large"
               >

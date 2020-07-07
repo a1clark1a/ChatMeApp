@@ -132,8 +132,8 @@ class UserPanel extends Component {
           <Grid.Row style={{ padding: "1.2em", margin: 0 }}>
             {/*Main app header */}
             <Header inverted floated="left" as="h2">
-              <Icon name="code" />
-              <Header.Content>DevChat</Header.Content>
+              <Icon name="terminal" />
+              <Header.Content>ChatMeApp</Header.Content>
             </Header>
 
             {/*User Dropdown*/}

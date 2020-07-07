@@ -1,0 +1,10 @@
+.app__column {
+  min-width: 250px;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 500px) {
+  .app__column {
+    max-width: 450px;
+  }
+}
